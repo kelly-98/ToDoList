@@ -127,3 +127,5 @@ window.sortCompleted = sortCompleted;
 const clock = () => {
     alert("Coming Soon Update!!!");
 }
+
+window.clock = clock;
