@@ -98,7 +98,7 @@ const moveToDo = (depart, arrival, obj, index) => {
     arrival.addToDo(obj);
 }
 
-const sortASC = (e) => {
+const sortASC = () => {
     let ulToDo = getEle("todo");
     tdList.sortToDoList(false);
     showToDoList(ulToDo);
@@ -106,10 +106,24 @@ const sortASC = (e) => {
 
 window.sortASC = sortASC;
 
-const sortDES = (e) => {
+const sortDES = () => {
     let ulToDo = getEle("todo");
     tdList.sortToDoList(true);
     showToDoList(ulToDo);
 }
 
 window.sortDES = sortDES;
+
+
+const sortCompleted = () => {
+    let ulCompleted = getEle("completed");
+    completeList.sortToDoList(false);
+    showCompleteList(ulCompleted);
+}
+
+window.sortCompleted = sortCompleted;
+
+
+const clock = () => {
+    alert("Coming Soon Update!!!");
+}
